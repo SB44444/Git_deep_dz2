@@ -99,3 +99,16 @@ git reset --hard HEAD~1  # Вернет ветку HEAD на первый ком
 
 git checkout 35a084b  # Вернет файл README.md к указанной версии и сразу добавится в индекс
  
+Info:
+To set main as the default branch name do:  
+
+$ git config --global init.defaultBranch main  
+
+Checking Your Settings
+If you want to check your configuration settings, you can use the git config --list command to list all the settings Git
+
+You may see keys more than once, because Git reads the same key from different files ([path]/etc/gitconfig and ~/.gitconfig, for example). In this case, Git uses the last value for each unique key it sees.
+
+You can also check what Git thinks a specific key’s value is by typing git config <key>:
+
+$ git config user.name new_name
