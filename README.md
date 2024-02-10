@@ -111,4 +111,22 @@ You may see keys more than once, because Git reads the same key from different f
 
 You can also check what Git thinks a specific key’s value is by typing git config <key>:
 
-$ git config user.name new_name
+$ git config user.name new_name  
+
+Зафиксировать все свои изменения и переключиться на ветку master:  
+
+$ git checkout master  
+Switched to branch 'master'  
+
+Создадать новую ветку, реализуем исправление.
+
+$ git checkout -b hotfix  
+Switched to a new branch 'hotfix'  
+$ vim index.html  
+$ git commit -a -m 'Fix broken email address'    
+
+Выполнить слияние ветки hotfix с веткой master для включения изменений в продукт.  
+командой git merge:  
+
+$ git checkout master  
+$ git merge hotfix  
