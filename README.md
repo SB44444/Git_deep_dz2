@@ -130,3 +130,5 @@ $ git commit -a -m 'Fix broken email address'
 
 $ git checkout master  
 $ git merge hotfix  
+
+https://github.com/SB44444/Git_deep_dz2
